@@ -8,5 +8,10 @@
             "email": "1280036@qq.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload":{
+    	"psr-4":{
+    		"pub\\":"pub"
+    	}
+    }
 }
