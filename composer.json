@@ -1,0 +1,12 @@
+{
+    "name": "fengxingzhu/composer",
+    "description": "composer demo",
+    "license": "1.0.0",
+    "authors": [
+        {
+            "name": "fengxingzhu",
+            "email": "1280036@qq.com"
+        }
+    ],
+    "require": {}
+}
