@@ -1,7 +1,59 @@
 <?php
-//×Ô¶¯¼ÓÔØ
+header("Content-type: text/html; charset=utf-8");
+use pub\testclass;
+
+
+//Ø”Â¶Â¯Â¼Ô”Ö
 require_once 'vendor/autoload.php';
-//ÊµÀı»¯commÀà
+
+$test=new  testclass();
+$add=$test->add(11, 22);
+echo "<br>".$add."<br>";
+
+echo "=====".isset($test->test);
+
+//Â²ã‹”Âµï¿½Ä²Â»Â´ç•šÂºÂ¯Ë½Â£Â¬Â»á¶·Ôƒ__call()
+$test->fff("aa");
+
+
+//`Â±Â»ÂµÂ±Â³Ê—Ö·ï¿½Â»Ö
+echo $test;
+
+
+
+//Âµï¿½ï¿½Â½Â·Â¨
+unset($test);
+
+echo "<br>";
+/**
+ * Â²ã‹”
+ */
+
+$arr=array(1,2,3,4);
+$arr1=[1,2,3,4,5];
+$arr2=[
+	'a'=>[1,2,3,4,5,6],
+	'b'=>100,
+	'c'=>[10,20,30]
+];
+
+include 'test.php';
+echo "<br>";echo "<br>";echo "<br>";
+//echo "<pre>";
+//print_r($arr5);
+foreach ($arr2 as $k=>$v)
+{
+	echo "<pre>";
+	print_r($v[0]);
+}
+echo "<br>";echo "<br>";echo "<br>";
 $a=new \pub\comm();
-//µ÷ÓÃinput() º¯Êı
-$a->input();
+
+echo "<br>";echo "<br>";echo "------------------<br>";
+$c=new \widget\conn();
+//$c::main();
+$c->test();
+
+
+
+
